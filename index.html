@@ -1,0 +1,75 @@
+<html>
+	<style>
+		.uppop {
+			background-size: 1200px 1100px;
+			background-image: url('Unbenanntes_Projekt.png');
+			width:1200;
+			height:1100;
+			display:none;
+			position:absolute;
+			margin-top:40px;
+			margin-left:110px
+		}
+	</style>
+	<script>
+		popup_ids = ['up-pop', 'bob-ub'];
+		function oeffnen(id) {
+			for(i = 0; i < popup_ids.length; ++i) {
+				 schliessen(popup_ids[i]);
+			}
+			document.getElementById(id).style.display = "block";
+		}
+
+		function schliessen(id) { 
+			document.getElementById(id).style.display = "none";
+		}
+	</script>
+	
+	<title>
+		Oui Oui Baguette
+	</title>
+	
+	<img style="position:absolute" src="IMG_1067.PNG">#
+	</img>
+
+	<button onclick="oeffnen('plop-up')" style="position:absolute;margin-top:750px;margin-left:640px;height:40px;"> <p style="font-size:30px;margin-top:0px;"> la mine </p> </button>
+
+	<button style="position:absolute;margin-top:1350px;margin-left:1460px;height:40px" onclick="oeffnen('up-pop');"> <p style="font-size:30px;margin-top:0px"> Nouméa </p> </button>
+	
+	<button onclick="oeffnen('bob-ub')" style="position:absolute;margin-top:200px;margin-left:300px;height:40px">
+		<p style="font-size:30px;margin-top:0px"> le récif </p> </button>
+
+	<div id="plop-up" class="uppop" style="margin-top:100px;margin-left:200px">
+		<button onclick="schliessen('plop-up')" style="margin-left:100%"> X </button>
+		<img style="margin-left:50px;margin-top:25px;width:569px;height:376px" src="the.png"> </img>
+		<h1 style="font-size:70px;margin-left:650px;margin-top:-260;"> Koniambo Mine </h1>
+		<p style="font-size:40px;margin-left:50px;margin-top:220px;"> Die Koniambo Mine ist eine der ertragreichsten Nickelminen auf Neukaledonien. Insgesamt befinden sich 8,4 Prozent des weltweiten Nickel-Vorkommens auf Neukaledonien. </p>
+		<p style="font-size:40px;margin-left:50px;margin-right:50px;color:#843939;"> La mine de Koniambo est l'une des mine de nickel les plus rentables de Nouvelle-Calédonie. Au total, 8,4% des réserves mondiales de nickel se trouvent en Nouvelle-Calédonie. </p>
+
+	</div>
+
+	<div id="bob-ub" class="uppop" style="margin-top:100px;margin-left:200px"> 
+		<button onclick="schliessen('bob-ub')" style="margin-left:100%"> X </button>
+		<img style="margin-left:50px;margin-top:25px;width:568px;height:407px;" src="th.png"> </img>
+		<h1 style="font-size:70px;margin-left:650px;margin-top:-290px;"> das Korallenriff </h1>
+		<h1 style="font-size:70px;margin-left:620px;margin-top:-50px;color:#843939"> le récif de corail </h1>
+		<p style="font-size:40px;margin-left:50px;margin-top:120px;"> Das neukaledonische Korallenriff gilt mit 1500 Kilometern länge, als das längste Barriereriff der Welt. Es umschließt die gesamte Hauptinsel. </p>
+		<p style="font-size:40px;margin-left:50px;margin-top:100px;margin-right:50px;color:#843939"> Le récif de corail de Nouvelle-Calédonie est le plus long récif de corail du monde. Il s'étend sur 1500 kilomètres et environne toute l'île. </p> 
+	</div>
+
+	<div id="up-pop" class="uppop"> 
+		<button onclick="schliessen('up-pop')" style="margin-left:100%">X</button> 
+		<br>
+		<img style="margin-left: 50px;margin-top: 25px;width: 1079px;height: 300px" src="IMG_1084.png"> </img>
+		<h1 style="font-size:60px;margin-left:70px;margin-top:5px"> Nouméa </h1>
+		<p style="font-size:40px;margin-left:70px;margin-top:-20px"> Nouméa ist die Haupstadt Neukaledoniens. In ihr leben fast 100 000 Einwohner, was fast 40 Prozent der Gesamtbevölkerung ausmacht.
+		Sie wurde um 1857 errichtet und 1879 zur Hauptstadt ernannt.
+	
+		</p>
+		<p style="font-size:40px;margin-left:70px;margin-top-20px;color:#843939"> Nouméa est la capitale de Nouvelle-Calédonie. Elle compte près de 100 000 habitants, c'est presque 40 pourcent de la population totale. Elle a été construite vers 1857 et est devenue la capitale en 1879. 
+		</p>
+	</div>
+	
+
+	
+</html>
